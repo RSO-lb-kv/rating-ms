@@ -12,6 +12,7 @@ import { resolve } from 'path';
 import { HealthModule } from './health/health.module';
 import { TerminusService } from './health/terminus.service';
 import { LoggingInterceptor } from './interceptors/loging.interceptor';
+import { SongRatingModule } from './song-rating/song-rating.module';
 
 
 @Module({
@@ -46,6 +47,8 @@ import { LoggingInterceptor } from './interceptors/loging.interceptor';
       imports: [HealthModule],
       useClass: TerminusService,
     }),
+
+    SongRatingModule,
   ],
 
   providers: [
