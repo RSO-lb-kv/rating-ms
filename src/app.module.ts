@@ -29,8 +29,8 @@ import { SongRatingModule } from './song-rating/song-rating.module';
     ServiceModule.register({
       dependencies: [NEST_CONSUL],
       service: {
-        id: 'image-upload-ms',
-        name: 'image-upload-ms',
+        id: 'rating-ms',
+        name: 'rating-ms',
         port: +process.env.PORT,
       },
       healthCheck: {
